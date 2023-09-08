@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="./css/style.css")
+    body 
+        - var buttons = ["up", "left", "rigth", "down"];
+        - var names = ["Arriba","Izquierda","Derecha","Abajo"];
+        .game-container
+            canvas#game 
+            .btns 
+                each item, index in buttons
+                    button(id=`${item}`)= names[index]
+            .btnsOthers 
+                button.resetRecord Reset Record 
+                button.resetGame Reset Game
+            .messages
+                p.lives vidas: 
+                p.time Tiempo: 
+                p.result
+                p.record
+            
+
+        script(src="./js/maps.js")
+        script(src="./js/game.js")  
+

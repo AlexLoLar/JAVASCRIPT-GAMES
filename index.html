@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body> 
+    <div class="game-container">
+      <canvas id="game"> </canvas>
+      <div class="btns"> 
+        <button id="up">Arriba</button>
+        <button id="left">Izquierda</button>
+        <button id="rigth">Derecha</button>
+        <button id="down">Abajo</button>
+      </div>
+      <div class="btnsOthers"> 
+        <button class="resetRecord">Reset Record </button>
+        <button class="resetGame">Reset Game</button>
+      </div>
+      <div class="messages">
+        <p class="lives">vidas: </p>
+        <p class="time">Tiempo: </p>
+        <p class="result"></p>
+        <p class="record"></p>
+      </div>
+    </div>
+    <script src="./js/maps.js"></script>
+    <script src="./js/game.js"> </script>
+  </body>
+</html>
